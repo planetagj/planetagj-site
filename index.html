@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PlanetAGJ</title>
-  <style>
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      background: #050b1a;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>PlanetAGJ</title>
 
-    .hero {
-      width: 100%;
-      height: 100vh;
-      background: url("AGJ Banner.jpg") center center / cover no-repeat;
-    }
-  </style>
+<style>
+
+html, body{
+margin:0;
+height:100%;
+}
+
+.hero{
+height:100vh;
+background:url("AGJ Banner.jpg") center/cover no-repeat; position:relative; }
+
+.logo{
+position:absolute;
+top:120px;
+left:50%;
+transform:translateX(-50%);
+width:120px;
+}
+
+</style>
 </head>
+
 <body>
-  <div class="hero"></div>
+
+<div class="hero">
+
+<img src="AGJ Logo.png" class="logo">
+
+</div>
+
 </body>
 </html>
-
