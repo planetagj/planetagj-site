@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>PlanetAGJ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanetAGJ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-<style>
-body {
-    margin:0;
-    background:#050b1a;
-    color:white;
-    font-family:Arial, Helvetica, sans-serif; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      background: #050b1a;
+    }
 
-.hero {
-    height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
+    .hero {
+      min-height: 100vh;
+      background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.55)),
+        url("AGJ Banner.jpg");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-h1 {
-    font-size:56px;
-    margin-bottom:10px;
-}
+    .content {
+      max-width: 800px;
+    }
 
-p {
-    font-size:24px;
-    opacity:.8;
-}
-</style>
+    .logo {
+      width: 180px;
+      max-width: 60vw;
+      margin-bottom: 20px;
+    }
 
+    h1 {
+      font-size: 56px;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 24px;
+      margin: 0;
+      opacity: 0.95;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 140px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="hero">
-<h1>PlanetAGJ</h1>
-<p>Earth • Space • Science</p>
-</div>
-
+  <section class="hero">
+    <div class="content">
+      <img src="AGJ Logo.png" alt="PlanetAGJ Logo" class="logo">
+      <h1>PlanetAGJ</h1>
+      <p>Earth • Space • Science</p>
+    </div>
+  </section>
 </body>
 </html>
 
