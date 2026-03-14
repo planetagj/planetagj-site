@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>PlanetAGJ</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PlanetAGJ</title>
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #050b1a;
+    }
 
-<style>
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background: url("AGJ Banner.jpg") center center / cover no-repeat;
+      position: relative;
+    }
 
-html, body{
-margin:0;
-height:100%;
-}
+    .logo {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+    }
 
-.hero{
-height:100vh;
-background:url("AGJ Banner.jpg") center/cover no-repeat; position:relative; }
+    @media (max-width: 768px) {
+      .hero {
+        background-size: contain;
+        background-position: top center;
+        background-color: #050b1a;
+      }
 
-.logo{
-position:absolute;
-top:120px;
-left:50%;
-transform:translateX(-50%);
-width:clamp(80px, 10vw, 140px);
-animation:fadein 2s ease;
-}
-
-@keyframes fadein{
-from{opacity:0;}
-to{opacity:1;}
-
-}
-
-</style>
+      .logo {
+        top: 90px;
+        width: 90px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
-<div class="hero">
-
-<img src="AGJ Logo.png" class="logo">
-
-</div>
-
+  <div class="hero">
+    <img src="AGJ Logo.png" alt="PlanetAGJ Logo" class="logo">
+  </div>
 </body>
 </html>
